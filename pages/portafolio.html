@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi portafolio</h1>
+        <p>Práctica de HTML semántico, formularios, multimedia y navegación entre páginas.</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="buscar.html">Buscar</a>
+
+        <a href="cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+
+        <a>otra página</a>
+        <a>xdd</a>
+        
+
+    </nav>
+
+    <main>
+
+        <div class="intro">
+            <h2>Bienvenido a mi portafolio</h2>
+            <p>Soy estudiante de Desarrollo Web y estos son los proyectos que he realizado durante mi formación.</p>
+            <p>Mi objetivo es especializarme en front-end y crear interfaces modernas y funcionales.</p>
+        </div>
+
+        <div class="contenedor-tarjetas">
+            
+            <div class="tarjeta">
+                <h3>Proyecto: Página personal</h3>
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Proyecto página personal">
+                    <figcaption>Mi primera página web completa.</figcaption>
+                </figure>
+                <p>Desarrollé una página personal con presentación, objetivos, intereses y multimedia. Aprendí a organizar el contenido con etiquetas semánticas y a enlazar páginas entre sí.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Proyecto: Sistema de búsqueda</h3>
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Proyecto sistema de búsqueda">
+                    <figcaption>Formularios con método GET.</figcaption>
+                </figure>
+                <p>Creé un sistema de búsqueda que envía datos a través de la URL. Practiqué diferentes tipos de campos: texto, email, select, checkbox y radio.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Proyecto: Formulario de contacto</h3>
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Proyecto formulario contacto">
+                    <figcaption>Validación avanzada de datos.</figcaption>
+                </figure>
+                <p>Implementé un formulario de contacto profesional con validación usando required, minlength, maxlength, pattern y tipo email. Incluye campos para mensaje y fecha.</p>
+            </div>
+
+        </div>
+
+        <section class="tabla-progreso">
+            <h2>Habilidades técnicas adquiridas</h2>
+
+            <table border="1">
+                <caption>Competencias desarrolladas durante el curso</caption>
+
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Descripción</th>
+                        <th>Dominio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Estructura semántica, etiquetas, rutas relativas</td>
+                        <td><progress value="85" max="100"></progress> 85%</td>
+                    </tr>
+                    <tr>
+                        <td>Formularios</td>
+                        <td>Validación, tipos de input, método GET</td>
+                        <td><progress value="80" max="100"></progress> 80%</td>
+                    </tr>
+                    <tr>
+                        <td>Multimedia</td>
+                        <td>Video, audio, iframes, figuras y pies de foto</td>
+                        <td><progress value="75" max="100"></progress> 75%</td>
+                    </tr>
+                    <tr>
+                        <td>Tablas</td>
+                        <td>Organización de datos, cabeceras, celdas combinadas</td>
+                        <td><progress value="90" max="100"></progress> 90%</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Selectores, colores, márgenes, Flexbox, Grid</td>
+                        <td><progress value="65" max="100"></progress> 65%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="detalles-portafolio">
+            <h2>Metas profesionales</h2>
+
+            <details>
+                <summary>Corto plazo (3 meses)</summary>
+                <p>Dominar CSS avanzado incluyendo Flexbox, Grid y animaciones. Completar al menos 5 proyectos pequeños para practicar.</p>
+            </details>
+
+            <details>
+                <summary>Mediano plazo (6 meses)</summary>
+                <p>Aprender JavaScript y crear páginas interactivas. Desarrollar un proyecto completo con validación dinámica.</p>
+            </details>
+
+            <details>
+                <summary>Largo plazo (1 año)</summary>
+                <p>Aprender un framework como React y comenzar a buscar oportunidades como desarrollador front-end junior.</p>
+            </details>
+        </div>
+
+        <div class="meter-seccion">
+            <h2>Avance general en el curso</h2>
+            <p>HTML: 85%</p>
+            <meter value="8.5" min="0" max="10"></meter>
+            <p>CSS: 65%</p>
+            <meter value="6.5" min="0" max="10"></meter>
+            <p>Próximo: JavaScript</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mi Portafolio Personal</p>
+        <p>Clase de Fundamentos Web - HTML Semántico y CSS Responsivo</p>
+
+        <address>
+            Ecuador<br>
+            Estudiante de Desarrollo Web
+        </address>
+    </footer>
+
+</body>
+
+</html>
