@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyección a 10 Años | Geovanny Brito</title>
+    
+    <!-- Bootstrap 5 CSS + Icons + Favicon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+    
+    <!-- Estilos adicionales para personalizar detalles -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fc 0%, #eef2f7 100%);
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0b2b26 0%, #1b4d3e 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 0 0 2rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            border-radius: 1.2rem;
+            overflow: hidden;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.2);
+        }
+        .timeline-badge {
+            background-color: #dba112;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+        .section-title {
+            border-left: 5px solid #dba112;
+            padding-left: 1rem;
+            margin-bottom: 1.8rem;
+            font-weight: 700;
+            color: #1b4d3e;
+        }
+        footer {
+            background-color: #0a1f1a;
+            color: #ccc;
+            border-top: 3px solid #dba112;
+        }
+        footer a {
+            color: #dba112;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffcd74;
+            text-decoration: underline;
+        }
+        .btn-gold {
+            background-color: #dba112;
+            border: none;
+            color: #1e2a2a;
+            font-weight: bold;
+        }
+        .btn-gold:hover {
+            background-color: #b87e0c;
+            color: white;
+        }
+        .profile-img {
+            border-radius: 2rem;
+            box-shadow: 0 15px 25px -10px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .goal-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            height: 100%;
+            border-bottom: 4px solid #dba112;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== NAVBAR MEJORADA CON BOOTSTRAP ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="fa-solid fa-chalkboard-user me-2"></i>Geovanny Brito
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarProyeccion" aria-controls="navbarProyeccion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarProyeccion">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/buscar.html"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/portafolio.html"><i class="fa-solid fa-briefcase"></i> Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/cto/contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="#"><i class="fa-solid fa-chart-line"></i> Proyección 10 años</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO PRINCIPAL ==================== -->
+    <div class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown"><i class="fa-regular fa-clock me-2"></i> Mi vida en 10 años</h1>
+            <p class="lead mt-3 mx-auto" style="max-width: 750px;">Una visión estratégica de crecimiento personal, profesional y tecnológico. <br> <strong>2036 — Un futuro construido hoy</strong></p>
+            <div class="mt-4">
+                <a href="#metas-futuro" class="btn btn-light btn-lg me-2"><i class="fa-solid fa-bullseye"></i> Conoce mis metas</a>
+                <a href="#galeria-futuro" class="btn btn-outline-light btn-lg"><i class="fa-regular fa-images"></i> Inspiración visual</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mb-5">
+        
+        <!-- ==================== SOBRE MÍ + TARJETA DE DATOS ==================== -->
+        <div class="row g-5 align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h2 class="section-title"><i class="fa-regular fa-user me-2"></i> Sobre mí: hacia el 2036</h2>
+                    <p class="fs-5">Dentro de una década me visualizo como un <strong>ingeniero en software especializado en arquitectura front-end y experiencia de usuario</strong>, liderando proyectos tecnológicos de impacto social. Seré referente en mi comunidad, promoviendo la educación digital y la innovación.</p>
+                    <p>Actualmente soy estudiante de Fundamentos Web, pero con disciplina y aprendizaje continuo, en 10 años habré consolidado mi propia startup o seré tech lead en una empresa internacional. La constancia y la pasión por el código me definirán.</p>
+                    <div class="mt-3 d-flex gap-3 flex-wrap">
+                        <span class="badge bg-success p-2"><i class="fa-regular fa-calendar-check"></i> +10 años de expertise</span>
+                        <span class="badge bg-warning text-dark p-2"><i class="fa-solid fa-globe"></i> Proyección global</span>
+                        <span class="badge bg-info p-2"><i class="fa-solid fa-brain"></i> Lifelong learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <!-- imagen simbólica de futuro/tecnología (manteniendo coherencia con el proyecto) -->
+                <img src="../img/espe/imagenEjemploEspe.png" alt="Visión futurista" class="img-fluid profile-img" style="max-height: 300px; object-fit: cover; width: 100%;">
+                <figcaption class="text-muted mt-2">Construyendo el mañana desde hoy.</figcaption>
+            </div>
+        </div>
+
+        <!-- ==================== MIS METAS (CARRUSEL DE TARJETAS MEJORADO) ==================== -->
+        <section id="metas-futuro" class="mt-5">
+            <h2 class="section-title"><i class="fa-solid fa-flag-checkered"></i> Metas clave para los próximos 10 años</h2>
+            <div class="row g-4">
+                <!-- meta 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="goal-card text-center h-100">
+                        <div class="timeline-badge mx-auto mb-3 d-flex align-items-center justify-content-center" style="background-color: #1b7505;">
+                            <i class="fa-solid fa-graduation-cap fs-3"></i>
+                        </div>
+                        <h4>Formación avanzada</h4>
+                        <p>Terminar mi pregrado, especializarme con una maestría en Ingeniería de Software y certificaciones internacionales (AWS, Scrum, React).</p>
+                    </div>
+                </div>
+                <!-- meta 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="goal-card text-center h-100">
+                        <div class="timeline-badge mx-auto mb-3 d-flex align-items-center justify-content-center" style="background-color: #dba112;">
+                            <i class="fa-solid fa-briefcase fs-3"></i>
+                        </div>
+                        <h4>Carrera profesional sólida</h4>
+                        <p>Ser desarrollador senior o arquitecto front-end en una empresa tecnológica líder, liderando equipos multidisciplinarios y proyectos innovadores.</p>
+                    </div>
+                </div>
+                <!-- meta 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="goal-card text-center h-100">
+                        <div class="timeline-badge mx-auto mb-3 d-flex align-items-center justify-content-center" style="background-color: #b87e0c;">
+                            <i class="fa-solid fa-house-chimney-user fs-3"></i>
+                        </div>
+                        <h4>Independencia y estabilidad</h4>
+                        <p>Alcanzar libertad financiera, invertir en bienes raíces y crear un emprendimiento tecnológico que genere empleo local.</p>
+                    </div>
+                </div>
+                <!-- meta 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="goal-card text-center h-100">
+                        <div class="timeline-badge mx-auto mb-3 d-flex align-items-center justify-content-center" style="background-color: #5a2d0c;">
+                            <i class="fa-solid fa-plane-departure fs-3"></i>
+                        </div>
+                        <h4>Viajar & conocer el mundo</h4>
+                        <p>Explorar al menos 15 países, aprender nuevas culturas y participar en conferencias tech internacionales como speaker.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LÍNEA DE TIEMPO / HITOS ==================== -->
+        <section class="mt-5 pt-3">
+            <h2 class="section-title"><i class="fa-solid fa-timeline"></i> Hoja de ruta: evolución década</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fa-regular fa-calendar-alt"></i> Años 1-3 (2026-2029)</h5>
+                            <p class="card-text">Dominio completo de HTML5, CSS3, JavaScript y frameworks como React. Creación de proyectos freelance, primeros trabajos como desarrollador junior y fortalecimiento del inglés técnico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fa-regular fa-calendar-alt"></i> Años 4-6 (2029-2032)</h5>
+                            <p class="card-text">Especialización en backend (Node.js, Python) y cloud computing. Obtener certificaciones de arquitectura. Ascender a desarrollador full-stack y empezar a liderar equipos pequeños.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fa-regular fa-calendar-alt"></i> Años 7-9 (2032-2035)</h5>
+                            <p class="card-text">Crecimiento hacia rol de Tech Lead / Engineering Manager. Lanzamiento de productos digitales propios, mentoría a nuevos talentos, maestría culminada y participación en comunidades tech.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-hover h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fa-regular fa-calendar-alt"></i> Año 10 (2036)</h5>
+                            <p class="card-text">Consolidación profesional: dirigir mi propia consultora o ser CTO de una empresa innovadora. Retribuir a la sociedad con proyectos de educación tecnológica gratuita.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROYECCIONES CON CARDS Y COLLAPSE (BOOTSTRAP) ==================== -->
+        <section class="mt-5">
+            <h2 class="section-title"><i class="fa-solid fa-chart-simple"></i> Áreas de crecimiento personal</h2>
+            <div class="accordion" id="accordionFuturo">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                            <i class="fa-solid fa-code me-3"></i> Habilidades técnicas y tecnología
+                        </button>
+                    </h2>
+                    <div id="collapseUno" class="accordion-collapse collapse show" data-bs-parent="#accordionFuturo">
+                        <div class="accordion-body">
+                            Desarrollo full-stack, arquitectura en la nube, inteligencia artificial aplicada, ciberseguridad básica, liderazgo técnico y metodologías ágiles. Además, contribuir a proyectos open source.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+                            <i class="fa-solid fa-heart me-3"></i> Bienestar y desarrollo humano
+                        </button>
+                    </h2>
+                    <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#accordionFuturo">
+                        <div class="accordion-body">
+                            Mantener una rutina de ejercicio y meditación, balance vida-trabajo, viajar con conciencia ecológica, lectura constante y fortalecer relaciones familiares y de amistad.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+                            <i class="fa-solid fa-chalkboard-user me-3"></i> Educación continua y mentoría
+                        </button>
+                    </h2>
+                    <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#accordionFuturo">
+                        <div class="accordion-body">
+                            Compartir conocimiento mediante talleres, escribir artículos técnicos, ser mentor de jóvenes desarrolladores, y eventualmente dictar cátedra universitaria.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GALERÍA DE SUEÑOS (CARRUSEL BOOTSTRAP + IMAGENES) ==================== -->
+        <section id="galeria-futuro" class="mt-5">
+            <h2 class="section-title"><i class="fa-regular fa-images"></i> Visualizando el futuro</h2>
+            <div id="carouselProyeccion" class="carousel slide carousel-fade shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProyeccion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProyeccion" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProyeccion" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/mundito.ico" class="d-block w-100" alt="Ícono de inspiración" style="height: 380px; object-fit: cover; background-color: #d9e3ec;">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                            <h5 class="text-white">Innovación constante</h5>
+                            <p class="text-white">Proyectos que transforman el mundo digital.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/espe/xd.png" class="d-block w-100" alt="Evento tecnológico" style="height: 380px; object-fit: cover;">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                            <h5>Conferencias internacionales</h5>
+                            <p>Compartiendo escenario con referentes tech.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/mamacoco.jpg" class="d-block w-100" alt="Viajes y cultura" style="height: 380px; object-fit: cover;">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded-3 p-3">
+                            <h5>Conociendo el mundo</h5>
+                            <p>Aprendizaje intercultural y nuevas perspectivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyeccion" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProyeccion" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACTO Y PROYECCIÓN LABORAL (CARD + FORMULARIO SUTIL) ==================== -->
+        <div class="row mt-5 g-4">
+            <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fa-regular-regular fa-message"></i> Contacto profesional futuro</h3>
+                        <p class="card-text">Si compartes esta visión o quieres colaborar en proyectos a largo plazo, estos serán mis canales oficiales en 2036, aunque desde hoy ya puedes escribirme.</p>
+                        <address class="mt-3">
+                            <i class="fa-solid fa-envelope text-success me-2"></i> geovanny.brito@vision2036.com<br>
+                            <i class="fa-brands fa-linkedin text-primary me-2"></i> /in/geovannybrito-futuro<br>
+                            <i class="fa-brands fa-github me-2"></i> github.com/gbrito-future
+                        </address>
+                        <hr>
+                        <p><i class="fa-solid fa-lightbulb"></i> <strong>Frase que me guía:</strong> <em>"El mejor momento para plantar un árbol fue hace 10 años, el segundo mejor momento es hoy".</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow rounded-4 h-100">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fa-regular fa-paper-plane"></i> Déjame un mensaje (simulación)</h3>
+                        <form method="GET" action="../pages/buscar.html" class="mt-2">
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Nombre</label>
+                                <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Correo electrónico</label>
+                                <input type="email" name="correo" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Mensaje de proyección</label>
+                                <textarea name="mensaje" rows="2" class="form-control" placeholder="¿Qué metas tienes para tu futuro?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold w-100"><i class="fa-solid fa-share"></i> Enviar (GET a buscar.html)</button>
+                        </form>
+                        <p class="small text-muted mt-3">*Este formulario usa método GET, los datos aparecerán en la URL de buscar.html</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== MÉTRICAS DE PROGRESO (METER / PROGRESS) ==================== -->
+        <div class="row mt-5 g-4">
+            <div class="col-12">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h3 class="section-title mb-3"><i class="fa-solid fa-chart-line"></i> Nivel de preparación actual hacia mis metas</h3>
+                    <div class="mb-3">
+                        <label class="fw-semibold">Habilidades técnicas (HTML/CSS/JS)</label>
+                        <progress class="w-100" value="70" max="100" style="height: 25px; border-radius: 20px;"></progress>
+                        <span class="badge bg-secondary">70%</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-semibold">Inglés técnico</label>
+                        <progress class="w-100" value="55" max="100"></progress>
+                        <span class="badge bg-secondary">55%</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-semibold">Proyectos personales y portafolio</label>
+                        <meter class="w-100" value="6" min="0" max="10" style="height: 25px;"></meter>
+                        <span class="badge bg-secondary">6/10</span>
+                    </div>
+                    <div class="alert alert-warning mt-2" role="alert">
+                        <i class="fa-regular fa-clock"></i> Con dedicación diaria, alcanzaré el 100% de preparación en menos de 5 años.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== BOTONES DROPDOWN Y EJEMPLO DE COLLAPSE MULTIPLE ==================== -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5><i class="fa-regular fa-compass"></i> Recursos interactivos (Bootstrap extra)</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                            <!-- Dropdown simple -->
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ver recursos inspiradores
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Libros de desarrollo personal</a></li>
+                                    <li><a class="dropdown-item" href="#">Roadmap.sh para programadores</a></li>
+                                    <li><a class="dropdown-item" href="#">Comunidades tech Ecuador</a></li>
+                                </ul>
+                            </div>
+                            <!-- Botón collapse dual -->
+                            <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEjemplo1" aria-expanded="false" aria-controls="collapseEjemplo1">
+                                Ver cita motivacional
+                            </button>
+                            <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEjemplo2" aria-expanded="false" aria-controls="collapseEjemplo2">
+                                Plan de acción semanal
+                            </button>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="collapse multi-collapse" id="collapseEjemplo1">
+                                    <div class="card card-body mt-2">
+                                        <i class="fa-solid fa-quote-left me-2"></i> “El éxito es la suma de pequeños esfuerzos repetidos día tras día.” – Robert Collier
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="collapse multi-collapse" id="collapseEjemplo2">
+                                    <div class="card card-body mt-2">
+                                        ✅ Estudiar 1h diaria de programación · ✅ Proyecto semanal · ✅ Networking + inglés
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="text-center pt-4 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <p class="mb-1">&copy; 2026 Geovanny Brito Casanova — Proyección a 10 años</p>
+                    <p class="small">Fundamentos Web · Universidad de las Fuerzas Armadas ESPE</p>
+                    <p><i class="fa-regular fa-calendar-check"></i> Visión 2036: Construyendo desde el código un futuro brillante.</p>
+                    <div>
+                        <a href="#" class="text-white-50 me-3"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white-50"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
