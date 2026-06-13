@@ -1,0 +1,141 @@
+/* GENERAL */
+
+body {
+    background-color: #f5f6f8;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    border-left: 4px solid #0d6efd;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.bg-dark {
+    background: linear-gradient(
+        135deg,
+        #212529,
+        #343a40
+    ) !important;
+}
+
+.lead {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CARDS */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMÁGENES */
+
+img {
+    border-radius: 12px;
+}
+
+/* BADGES */
+
+.badge {
+    border-radius: 20px;
+}
+
+/* BOTONES */
+
+.btn {
+    border-radius: 8px;
+}
+
+/* ACCORDION */
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* FORMULARIO */
+
+.form-control {
+    border-radius: 10px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* PROGRESS */
+
+.progress {
+    height: 25px;
+    border-radius: 20px;
+}
+
+/* Para reemplazar inline width */
+
+.progreso-70 {
+    width: 70%;
+}
+
+.progreso-60 {
+    width: 60%;
+}
+
+.progreso-50 {
+    width: 50%;
+}
+
+/* CAROUSEL */
+
+.carousel-inner img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 4px solid #0d6efd;
+}
+
+/* MOBILE FIRST */
+
+@media (max-width: 768px) {
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .carousel-inner img {
+        height: 220px;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+}
